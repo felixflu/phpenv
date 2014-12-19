@@ -18,9 +18,6 @@ PHPENV_ROOT="$(dirname ~/.phpenv/bin)"
 echo "Installing PHP build dependencies..."
 echo "ERROR: Something already installed is a good thing"
 echo
-#flex 2.5.4 formula patch
-grep -q 2.5.4 /usr/local/Library/Formula/flex.rb || \
-    patch /usr/local/Library/Formula/flex.rb  ${PHPENV_ROOT}/patches/homebrew-flex.diff
 
 brew install \
     flex curl expat freetds freetype gettext gmp imap-uw jpeg libevent libiconv libmagic \
