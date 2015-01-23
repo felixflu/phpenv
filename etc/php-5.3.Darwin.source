@@ -36,7 +36,6 @@ CONFIGURE_OPTIONS="--with-apxs2=/usr/sbin/apxs
                    --with-xsl=/usr/local/opt/libxslt
                    --enable-zip
                    --with-pcre-regex=/usr/local/opt/pcre
-                   --with-xpm-dir=/usr/X11
                    --with-pcre-dir=/usr/local/opt/pcre
                    --with-curl=/usr/local/opt/curl
                    --with-iconv-dir=/usr/local/opt/libiconv
@@ -50,12 +49,16 @@ CONFIGURE_OPTIONS="--with-apxs2=/usr/sbin/apxs
                    --with-mysql-sock=/tmp/mysql.sock
                    --with-readline=/usr/local/opt/readline
                    --enable-apc
-                   --with-ncurses
                    --enable-igbinary
-                   --enable-memcached
-                   --with-libmemcached-dir=/usr/local/opt/libmemcached
-                   --enable-memcached-igbinary
                    --enable-xhprof
                    "
 
 MANUAL_EXTENSIONS=('http' 'uri-template' 'xdebug')
+
+## removed switches due to compilation problems
+#                    --with-xpm-dir=/usr/X11
+#                    --enable-memcached
+#                    --with-libmemcached-dir=/usr/local/opt/libmemcached
+#                    --enable-memcached-igbinary
+#                    --with-ncurses
+
